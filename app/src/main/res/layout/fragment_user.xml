@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@drawable/profilebackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".Fragment.UserFragment">
+
+    <ImageView
+        android:id="@+id/dashboard"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/dashboardicon"
+
+        />
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/editicon"
+
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montbold"
+        android:lines="1"
+        android:text="My Account"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dashboard"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:riv_border_color="#ff0"
+            app:riv_border_width="2.5dp"
+            app:riv_corner_radius="40dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/profileImage"
+            android:src="@drawable/profile_placeholder"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montbold"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:id="@+id/name"
+
+            />
+
+        <TextView
+            android:id="@+id/emailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="support@softment.in"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/montregular"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="center"
+          android:layout_marginTop="6dp"
+          >
+          <ImageView
+              android:layout_width="14dp"
+              android:layout_height="14sp"
+              android:src="@drawable/ic_baseline_location_on_24"
+              />
+          <TextView
+              android:layout_marginStart="3dp"
+              android:id="@+id/city"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Bhopal"
+              android:fontFamily="@font/montbold"
+              android:textSize="13sp"
+              android:textColor="@color/white"
+
+              />
+      </LinearLayout>
+              <RelativeLayout
+
+                  android:id="@+id/logoutRR"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <TextView
+
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="20dp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginEnd="20dp"
+                      android:layout_marginBottom="10dp"
+                      android:fontFamily="@font/montbold"
+                      android:text="Settings"
+                      android:textColor="@color/white"
+                      android:textSize="14sp" />
+
+                  <TextView
+                      android:id="@+id/logout"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginStart="20dp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginEnd="20dp"
+                      android:layout_marginBottom="10dp"
+                      android:fontFamily="@font/montmedium"
+                      android:text="Logout"
+                      android:textColor="#ff0"
+                      android:textSize="13sp" />
+
+              </RelativeLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_below="@+id/logoutRR"
+                  android:layout_marginStart="20dp"
+                  android:orientation="vertical">
+
+                  <RelativeLayout
+                      android:id="@+id/notification"
+                      android:layout_width="match_parent"
+                      android:layout_height="56dp">
+
+                      <TextView
+                          android:textColor="@color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerVertical="true"
+                          android:fontFamily="@font/montregular"
+                          android:text="Manage Membership"
+                          android:textSize="12sp" />
+
+                      <ImageView
+                          android:layout_width="16dp"
+                          android:layout_height="16dp"
+                          android:layout_alignParentEnd="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginEnd="20dp"
+                          android:src="@drawable/right" />
+
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#A8919191"
+
+                          />
+                  </RelativeLayout>
+                  <RelativeLayout
+                      android:id="@+id/myworkout"
+                      android:layout_width="match_parent"
+                      android:layout_height="56dp">
+
+                      <TextView
+                          android:textColor="@color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerVertical="true"
+                          android:fontFamily="@font/montregular"
+                          android:text="Notification Centre"
+                          android:textSize="12sp" />
+
+                      <ImageView
+                          android:layout_width="16dp"
+                          android:layout_height="16dp"
+                          android:layout_alignParentEnd="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginEnd="20dp"
+                          android:src="@drawable/right" />
+
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#A8919191"
+
+                          />
+                  </RelativeLayout>
+
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginBottom="10dp"
+                      android:fontFamily="@font/montbold"
+                      android:text="Support"
+                      android:textColor="@color/white"
+                      android:textSize="14sp" />
+
+                  <RelativeLayout
+                      android:id="@+id/help_cener"
+                      android:layout_width="match_parent"
+                      android:layout_height="56dp">
+
+                      <TextView
+                          android:textColor="@color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerVertical="true"
+                          android:fontFamily="@font/montregular"
+                          android:text="Help Center"
+                          android:textSize="12sp" />
+
+                      <ImageView
+                          android:layout_width="16dp"
+                          android:layout_height="16dp"
+                          android:layout_alignParentEnd="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginEnd="20dp"
+                          android:src="@drawable/right" />
+
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#A8919191"
+
+                          />
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:id="@+id/rateApp"
+                      android:layout_width="match_parent"
+                      android:layout_height="56dp">
+
+                      <TextView
+                          android:textColor="@color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerVertical="true"
+                          android:fontFamily="@font/montregular"
+                          android:text="Rate App"
+                          android:textSize="12sp" />
+
+                      <ImageView
+                          android:layout_width="16dp"
+                          android:layout_height="16dp"
+                          android:layout_alignParentEnd="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginEnd="20dp"
+                          android:src="@drawable/right" />
+
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#A8919191"
+
+                          />
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:id="@+id/shareApp"
+                      android:layout_width="match_parent"
+                      android:layout_height="56dp">
+
+                      <TextView
+                          android:textColor="@color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerVertical="true"
+                          android:fontFamily="@font/montregular"
+                          android:text="Share App"
+                          android:textSize="12sp" />
+
+                      <ImageView
+                          android:layout_width="16dp"
+                          android:layout_height="16dp"
+                          android:layout_alignParentEnd="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginEnd="20dp"
+                          android:src="@drawable/right" />
+
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#A8919191"
+
+                          />
+                  </RelativeLayout>
+
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginBottom="10dp"
+                      android:fontFamily="@font/montbold"
+                      android:text="About"
+                      android:textColor="@color/white"
+                      android:textSize="14sp" />
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="56dp">
+
+                      <TextView
+                          android:textColor="@color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerVertical="true"
+                          android:fontFamily="@font/montregular"
+                          android:text="Version"
+                          android:textSize="12sp" />
+
+                      <TextView
+                          android:textColor="@color/white"
+                          android:id="@+id/version"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentEnd="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginEnd="20dp"
+                          android:fontFamily="@font/montregular"
+                          android:text="1.0"
+                          android:textSize="12sp" />
+
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#A8919191"
+
+                          />
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:id="@+id/privacy_policy"
+                      android:layout_width="match_parent"
+                      android:layout_height="56dp">
+
+                      <TextView
+                          android:textColor="@color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerVertical="true"
+                          android:fontFamily="@font/montregular"
+                          android:text="Privacy Policy"
+                          android:textSize="12sp" />
+
+                      <ImageView
+
+                          android:layout_width="16dp"
+                          android:layout_height="16dp"
+                          android:layout_alignParentEnd="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginEnd="20dp"
+                          android:src="@drawable/right" />
+
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#A8919191"
+
+                          />
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:id="@+id/termsAndConditions"
+                      android:layout_width="match_parent"
+                      android:layout_height="56dp">
+
+                      <TextView
+                          android:textColor="@color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerVertical="true"
+                          android:fontFamily="@font/montregular"
+                          android:text="Terms &amp; Conditions"
+                          android:textSize="12sp" />
+
+                      <ImageView
+                          android:layout_width="16dp"
+                          android:layout_height="16dp"
+                          android:layout_alignParentEnd="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginEnd="20dp"
+                          android:src="@drawable/right" />
+
+
+                  </RelativeLayout>
+                  <RelativeLayout
+                      android:layout_marginBottom="16dp"
+                      android:layout_marginEnd="20dp"
+                      android:layout_marginTop="10dp"
+                        android:background="@drawable/deletebtnback"
+                      android:id="@+id/delete_account"
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      >
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerInParent="true"
+                          android:fontFamily="@font/montbold"
+                          android:text="Delete Account"
+                          android:textAlignment="center"
+                          android:textColor="#F44336"
+                          android:textSize="13sp" />
+
+                  </RelativeLayout>
+              </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

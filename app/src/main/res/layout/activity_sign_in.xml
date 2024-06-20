@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/img1"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo"
+            app:riv_corner_radius="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/montbold"
+            android:lines="1"
+            android:text="Welcome To CET &amp; NEET Exam Practice"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/montmedium"
+            android:lines="1"
+            android:text="Login To Continue"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-75dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montbold"
+                android:textColor="@color/main_color"
+                android:textSize="18sp"
+                />
+            <View
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/main_color"
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:background="@drawable/back"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                >
+                <EditText
+                    android:maxLength="10"
+                    android:drawablePadding="4dp"
+                    android:id="@+id/mobileNumberET"
+                    android:fontFamily="@font/montmedium"
+                    android:gravity="center_vertical"
+                    android:hint="Mobile Number"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp"
+                    android:textColor="#777"
+                    android:textSize="13sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/edittext_back"
+                    android:layout_toStartOf="@id/sendBtn"
+                    android:layout_marginEnd="10dp"
+                    android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sendBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/montmedium"
+                    android:background="@drawable/back"
+                    android:backgroundTint="@color/main_color"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:text="Send OTP"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:visibility="gone"
+                android:id="@+id/otpLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify OTP"
+                    android:fontFamily="@font/montmedium"
+                    android:textColor="#888"
+                    android:textSize="13sp"
+                    />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/code1"
+                        android:textColor="#343434"
+                        android:fontFamily="@font/montbold"
+                        android:gravity="center"
+                        android:layout_marginStart="2dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:textSize="13sp"
+                        android:background="@drawable/edittext_back"
+                        android:maxLength="1"
+
+                        />
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/code2"
+                        android:maxLength="1"
+                        android:textColor="#343434"
+                        android:fontFamily="@font/montbold"
+                        android:gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:textSize="13sp"
+                        android:background="@drawable/edittext_back"
+
+                        />
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/code3"
+                        android:maxLength="1"
+                        android:textColor="#343434"
+                        android:fontFamily="@font/montbold"
+                        android:gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:textSize="13sp"
+                        android:background="@drawable/edittext_back"
+
+                        />
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/code4"
+                        android:maxLength="1"
+                        android:textColor="#343434"
+                        android:fontFamily="@font/montbold"
+                        android:gravity="center"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:textSize="13sp"
+                        android:background="@drawable/edittext_back"
+
+                        />
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/code5"
+                        android:maxLength="1"
+                        android:textColor="#343434"
+                        android:fontFamily="@font/montbold"
+                        android:gravity="center"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:textSize="13sp"
+                        android:background="@drawable/edittext_back"
+
+                        />
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/code6"
+                        android:maxLength="1"
+                        android:textColor="#343434"
+                        android:fontFamily="@font/montbold"
+                        android:gravity="center"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:textSize="13sp"
+                        android:background="@drawable/edittext_back"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginBottom="20dp"
+                android:id="@+id/login"
+                android:layout_width="240dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/montmedium"
+                android:background="@drawable/back"
+                android:backgroundTint="@color/main_color"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/img2"
+        />
+
+</RelativeLayout>

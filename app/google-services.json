@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "1055992607184",
+    "project_id": "cet-and-neet-exam-practice",
+    "storage_bucket": "cet-and-neet-exam-practice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055992607184:android:bf74f8a04d828c735e09d5",
+        "android_client_info": {
+          "package_name": "in.softment.exampractice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055992607184-prj8ou6fmues4af8k9gmqtuafkcp7cf1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.softment.exampractice",
+            "certificate_hash": "cfc3bfe745464da7513887e3a2b4c43655b4ccc8"
+          }
+        },
+        {
+          "client_id": "1055992607184-uamsrap7qikbu4ud7veh2j053tavpn50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3wxrjqFwGPqDPA00C_Rc3vK3LrjYtcrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055992607184-uamsrap7qikbu4ud7veh2j053tavpn50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055992607184:android:949675a453f022ba5e09d5",
+        "android_client_info": {
+          "package_name": "in.softment.exampracticeadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055992607184-uamsrap7qikbu4ud7veh2j053tavpn50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3wxrjqFwGPqDPA00C_Rc3vK3LrjYtcrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055992607184-uamsrap7qikbu4ud7veh2j053tavpn50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
